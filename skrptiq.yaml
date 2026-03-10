@@ -1,0 +1,42 @@
+# --- Identity ---
+name: "revision-strategy-flow"
+display_name: "Revision Strategy Flow"
+description: "Building and executing revision strategies across multiple subjects using evidence-based learning techniques"
+version: "1.0.0"
+engine: ">=1.0.0"
+
+# --- Attribution ---
+author:
+  name: "skrptiq"
+  url: "https://hub.skrptiq.ai"
+licence: "MIT"
+repository: "https://github.com/skrpts/revision-strategy-flow"
+
+# --- Discovery (Hub) ---
+category: "student"
+tags:
+  - "revision"
+  - "exam-prep"
+  - "spaced-repetition"
+  - "active-recall"
+  - "study-planning"
+
+# --- Security & Access ---
+requires:
+  services:
+    - "anthropic-claude"
+  permissions: []
+  data_handling:
+    - "course-content"
+    - "exam-specifications"
+
+# --- Contents ---
+contents:
+  skills: 3
+  prompts: 5
+  workflows: 1
+  services: 1
+  sources: 1
+  documents: 1
+  assets: 2
+  total: 14
