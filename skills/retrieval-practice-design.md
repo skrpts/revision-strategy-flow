@@ -5,7 +5,7 @@ title: Retrieval Practice Design
 description: "Designs revision sessions and practice questions using retrieval practice, elaborative interrogation, interleaving, and other evidence-based learning techniques"
 tags: [Production, Tested]
 connections:
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: learning-science-reference
     type: references

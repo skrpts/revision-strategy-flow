@@ -5,7 +5,7 @@ title: Revision Planning
 description: "Designs personalised revision timetables that allocate study time based on exam dates, topic difficulty, confidence levels, and available hours"
 tags: [Production, Tested]
 connections:
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: learning-science-reference
     type: references

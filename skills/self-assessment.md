@@ -5,7 +5,7 @@ title: Self-Assessment
 description: "Guides students through honest evaluation of their understanding across topics, identifying genuine confidence levels and blind spots"
 tags: [Production, Tested]
 connections:
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: learning-science-reference
     type: references

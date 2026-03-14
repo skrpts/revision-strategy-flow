@@ -21,7 +21,7 @@ connections:
     type: uses
   - target: post-exam-reflector
     type: uses
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: learning-science-reference
     type: references
@@ -110,3 +110,48 @@ The flow is considered complete for an exam period when:
 3. Each weak topic has had at least 3 focused revision sessions
 4. Practice questions have been attempted for every examined topic
 5. Post-exam reflections have been completed and filed for future reference
+
+## Inputs
+
+| Name | Required | Description | Example |
+|------|----------|-------------|---------|
+| `{{input.module}}` | Yes | Module | `Paste the relevant brief, notes, source material, or dataset here.` |
+| `{{input.topic_list_via_modules}}` | Yes | topic list via {{modules_and_topics}} | `Paste the relevant brief, notes, source material, or dataset here.` |
+| `{{input.plus_any_past_exam}}` | Yes | plus any past exam results via {{past_results}} | `Paste the relevant brief, notes, source material, or dataset here.` |
+| `{{input.confidence_map_via_confidence}}` | No | Confidence map via {{confidence_map}} | `Paste the relevant brief, notes, source material, or dataset here.` |
+
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| Confidence map | Confidence map with topics rated and prioritised, using the topic-confidence-tracker-template |
+| Revision timetable using the revision-timetable-template | Revision timetable using the revision-timetable-template |
+| Structured revision session plan | Structured revision session plan with activities, timings, and self-check criteria |
+| Set of practice questions | Set of practice questions with model answers and marking guidance |
+| Structured reflection | Structured reflection with actionable improvements for future revision |
+
+## Setup
+
+Before running this workflow:
+
+1. No external services required — paste your content directly and provide any supporting context as inputs or source nodes.
+2. Review the included documents, assets, or source nodes and customise them to match your team, brand, or domain conventions where needed.
+3. No specific AI provider or API key is required beyond your configured skrptiq LLM provider.
+
+## Provider Notes
+
+- Most stages work with any capable model; stronger models usually improve synthesis, judgement, and writing quality.
+- Extraction, classification, and formatting steps generally run well on smaller or faster models.
+- Because there are no vendor-specific integrations here, provider choice is mostly a trade-off between speed, quality, and cost.
+
+## Example Input
+
+To test this workflow immediately after import:
+
+```
+Module: "Paste the relevant brief, notes, source material, or dataset here."
+Topic List Via Modules: "Paste the relevant brief, notes, source material, or dataset here."
+Plus Any Past Exam: "Paste the relevant brief, notes, source material, or dataset here."
+Confidence Map Via Confidence: "Paste the relevant brief, notes, source material, or dataset here."
+```
+
