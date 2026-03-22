@@ -2,7 +2,7 @@
 type: document
 id: revision-strategy-guide
 title: Revision Strategy Guide
-description: "Comprehensive guide to building an effective revision strategy using evidence-based techniques"
+description: "Complete guide to building an effective revision strategy using evidence-based techniques"
 tags: [Production, Customer-Facing]
 connections:
   - target: learning-science-reference

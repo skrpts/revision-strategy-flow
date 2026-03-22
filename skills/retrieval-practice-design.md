@@ -16,7 +16,7 @@ metadata:
 
 ## Capability
 
-Retrieval Practice Design creates structured revision sessions and practice questions that leverage the testing effect — the finding that actively retrieving information from memory strengthens long-term retention far more effectively than passive review. It combines multiple evidence-based techniques into coherent session plans that students can follow independently.
+Retrieval Practice Design creates structured revision sessions and practice questions that use the testing effect — the finding that actively retrieving information from memory strengthens long-term retention far more effectively than passive review. It combines multiple evidence-based techniques into coherent session plans that students can follow independently.
 
 This skill understands that different topics and different confidence levels require different approaches. A student who is weak on a topic needs more scaffolded retrieval with immediate feedback. A student who is strong needs challenging application questions and interleaved practice to maintain and deepen their understanding.
 

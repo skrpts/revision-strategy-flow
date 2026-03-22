@@ -66,4 +66,4 @@ After the student completes their self-assessment:
 - Do not inflate ratings to make the student feel better — honest assessment is the foundation of effective revision
 - Do not assess topics the student has not listed — work with what they provide, but flag if coverage seems incomplete
 - If past exam results are provided, use them as a reality check but do not assume past performance perfectly predicts future performance
-- The goal is actionable prioritisation, not a comprehensive diagnostic — keep the output focused
+- The goal is actionable prioritisation, not a thorough diagnostic — keep the output focused

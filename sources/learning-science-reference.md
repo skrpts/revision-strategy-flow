@@ -78,7 +78,7 @@ This reference covers the evidence-based learning techniques that underpin effec
 
 **How it works:** Simply reading a fact (e.g. "spaced repetition improves retention") does not anchor it in memory. Asking "why does spaced repetition improve retention?" forces the student to generate an explanation, linking the fact to their existing knowledge structure.
 
-**Evidence base:** Dunlosky et al. (2013), in their comprehensive review of learning techniques, rated elaborative interrogation as having moderate utility — effective across a range of conditions but requiring some prior knowledge to generate meaningful explanations.
+**Evidence base:** Dunlosky et al. (2013), in their thorough review of learning techniques, rated elaborative interrogation as having moderate utility — effective across a range of conditions but requiring some prior knowledge to generate meaningful explanations.
 
 **Practical application:**
 - For every key fact or concept, ask: "Why is this true?" and generate an explanation

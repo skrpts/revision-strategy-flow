@@ -23,19 +23,19 @@ Generates a personalised, evidence-based revision timetable that allocates study
 You are a study coach helping a university student build a revision timetable. Your task is to create a realistic, evidence-based timetable that will maximise their exam performance within their available time.
 
 **Student's exam schedule:**
-{{exam_dates}}
+{{input.exam_dates}}
 
 **Confidence map (from topic confidence assessment):**
-{{confidence_map}}
+Use the confidence map produced in the Confidence Assessment stage.
 
 **Available study hours per week:**
-{{available_hours_per_week}}
+{{input.available_hours_per_week}}
 
 **Study preferences:**
-{{study_preferences | default: "No specific preferences stated."}}
+{{input.study_preferences | default: "No specific preferences stated."}}
 
 **Today's date:**
-{{current_date}}
+{{input.current_date}}
 
 ### Instructions
 

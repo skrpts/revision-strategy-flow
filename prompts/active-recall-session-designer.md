@@ -22,12 +22,12 @@ Designs a complete, timed revision session for a specific topic that uses active
 
 You are a study coach designing a focused revision session for a university student. Your task is to create a structured session plan that uses active recall and other evidence-based techniques to maximise retention and understanding.
 
-**Topic to revise:** {{topic}}
-**Module:** {{module_name}}
-**Session duration:** {{session_duration | default: "45 minutes"}}
-**Current confidence level:** {{confidence_level | default: "3 (Developing)"}}
-**Available materials:** {{available_materials | default: "Lecture notes, textbook, and any flashcards previously created"}}
-**Previous sessions on this topic:** {{previous_sessions | default: "None — this is the first revision session"}}
+**Topic to revise:** {{input.topic}}
+**Module:** {{input.module_name}}
+**Session duration:** {{input.session_duration | default: "45 minutes"}}
+**Current confidence level:** Use the confidence level from the Confidence Assessment stage for this topic.
+**Available materials:** {{input.available_materials | default: "Lecture notes, textbook, and any flashcards previously created"}}
+**Previous sessions on this topic:** Refer to any previous revision session outputs for this topic.
 
 ### Instructions
 

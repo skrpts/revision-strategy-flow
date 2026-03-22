@@ -115,10 +115,26 @@ The flow is considered complete for an exam period when:
 
 | Name | Required | Description | Example |
 |------|----------|-------------|---------|
-| `{{input.module}}` | Yes | Module | `Paste the relevant brief, notes, source material, or dataset here.` |
-| `{{input.topic_list_via_modules}}` | Yes | topic list via {{modules_and_topics}} | `Paste the relevant brief, notes, source material, or dataset here.` |
-| `{{input.plus_any_past_exam}}` | Yes | plus any past exam results via {{past_results}} | `Paste the relevant brief, notes, source material, or dataset here.` |
-| `{{input.confidence_map_via_confidence}}` | No | Confidence map via {{confidence_map}} | `Paste the relevant brief, notes, source material, or dataset here.` |
+| `{{input.modules_and_topics}}` | Yes | List of modules and topics to revise | `Psychology: Memory, Perception, Learning Theory. Statistics: Probability, Regression, Hypothesis Testing.` |
+| `{{input.module_name}}` | Yes | The primary module name | `Psychology` |
+| `{{input.time_until_exams}}` | Yes | Time remaining until exams | `4 weeks` |
+| `{{input.exam_dates}}` | Yes | Exam schedule with dates | `Psychology: 2026-05-15, Statistics: 2026-05-20` |
+| `{{input.available_hours_per_week}}` | Yes | Available study hours per week | `25` |
+| `{{input.past_results}}` | No | Past exam results or mock scores | `Psychology mock: 58%, Statistics mock: 72%` |
+| `{{input.study_preferences}}` | No | Study preferences (e.g. morning/evening, group/solo) | `Morning study preferred, 45-minute sessions` |
+| `{{input.current_date}}` | No | Today's date | `2026-03-20` |
+| `{{input.topic}}` | No | Specific topic for revision session or practice questions | `Memory` |
+| `{{input.exam_format}}` | No | Exam format for practice questions | `Written essay with short-answer section` |
+| `{{input.question_count}}` | No | Number of practice questions to generate | `5` |
+| `{{input.session_duration}}` | No | Duration for active recall sessions | `45 minutes` |
+| `{{input.available_materials}}` | No | Materials available for revision | `Lecture notes, textbook, and flashcards` |
+| `{{input.past_paper_examples}}` | No | Past paper examples for question style matching | `Paste past paper questions here.` |
+| `{{input.exam_date}}` | No | Specific exam date for post-exam reflection | `2026-05-15` |
+| `{{input.exam_details}}` | No | Additional exam details for reflection | `3-hour written paper, 4 essay questions from choice of 8` |
+| `{{input.revision_approach}}` | No | Description of revision approach used | `Focused on retrieval practice and past papers for 3 weeks` |
+| `{{input.performance_assessment}}` | No | Self-assessed exam performance | `Felt confident on 3 of 4 questions, struggled with the methodology question` |
+| `{{input.difficulties_encountered}}` | No | Specific difficulties during the exam | `Ran out of time on the last question, could not recall key theorists for Q2` |
+| `{{input.emotional_state}}` | No | Emotional state after the exam | `Relieved but worried about Q2` |
 
 ## Outputs
 
@@ -149,9 +165,10 @@ Before running this workflow:
 To test this workflow immediately after import:
 
 ```
-Module: "Paste the relevant brief, notes, source material, or dataset here."
-Topic List Via Modules: "Paste the relevant brief, notes, source material, or dataset here."
-Plus Any Past Exam: "Paste the relevant brief, notes, source material, or dataset here."
-Confidence Map Via Confidence: "Paste the relevant brief, notes, source material, or dataset here."
+Modules And Topics: "Psychology: Memory, Perception, Learning Theory. Statistics: Probability, Regression."
+Module Name: "Psychology"
+Time Until Exams: "4 weeks"
+Exam Dates: "Psychology: 2026-05-15, Statistics: 2026-05-20"
+Available Hours Per Week: "25"
 ```
 
