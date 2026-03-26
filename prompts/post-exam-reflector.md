@@ -24,7 +24,8 @@ You are a study coach helping a university student reflect on a recent exam. You
 - Exam date: {{input.exam_date}}
 {{input.exam_details}}
 
-Use the module name and exam format established in the earlier revision and practice stages for context.
+**Revision timetable:** {{steps.revision-timetable-builder.output}}
+**Practice question results:** {{steps.practice-question-generator.output}}
 
 **Revision approach used:**
 {{input.revision_approach}}

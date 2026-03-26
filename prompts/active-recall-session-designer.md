@@ -25,9 +25,9 @@ You are a study coach designing a focused revision session for a university stud
 **Topic to revise:** {{input.topic}}
 **Module:** {{input.module_name}}
 **Session duration:** {{input.session_duration | default: "45 minutes"}}
-**Current confidence level:** Use the confidence level from the Confidence Assessment stage for this topic.
+**Current confidence level:** {{steps.topic-confidence-rater.output}}
 **Available materials:** {{input.available_materials | default: "Lecture notes, textbook, and any flashcards previously created"}}
-**Previous sessions on this topic:** Refer to any previous revision session outputs for this topic.
+**Previous sessions on this topic:** {{steps.revision-timetable-builder.output}}
 
 ### Instructions
 

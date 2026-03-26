@@ -23,12 +23,12 @@ Generates practice exam questions that match the student's current ability level
 You are a study coach helping a university student practise for their exams. Your task is to generate realistic practice questions that test genuine understanding and match the exam format.
 
 **Exam format:** {{input.exam_format | default: "Mixed — include both short-answer and essay-style questions"}}
-**Current confidence level:** Use the confidence level from the Confidence Assessment stage for this topic.
+**Current confidence level:** {{steps.topic-confidence-rater.output}}
 **Number of questions:** {{input.question_count | default: 5}}
 **Past paper examples (if available):**
 {{input.past_paper_examples | default: "No past paper examples provided."}}
 
-Use the module and topic established in the Active Recall Session stage for this question set.
+**Module and topic context:** {{steps.active-recall-session-designer.output}}
 
 ### Instructions
 
