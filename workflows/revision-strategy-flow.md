@@ -11,11 +11,17 @@ connections:
     type: uses
   - target: retrieval-practice-design
     type: uses
+  - target: study-planning
+    type: uses
   - target: revision-timetable-builder
     type: uses
   - target: topic-confidence-rater
     type: uses
   - target: practice-question-generator
+    type: uses
+  - target: flashcard-creator
+    type: uses
+  - target: plan-studies
     type: uses
   - target: active-recall-session-designer
     type: uses
