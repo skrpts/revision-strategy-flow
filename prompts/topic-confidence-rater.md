@@ -3,7 +3,7 @@ type: prompt
 id: topic-confidence-rater
 title: Topic Confidence Rater
 description: "Assesses confidence level across topics and identifies weak areas for focused revision"
-tags: [Production, planning:learning, learning:retention]
+tags: [Production, Learning, Academic]
 connections:
   - target: self-assessment
     type: derived_from

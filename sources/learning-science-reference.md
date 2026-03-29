@@ -3,7 +3,7 @@ type: source
 id: learning-science-reference
 title: Learning Science Reference
 description: "Reference guide to evidence-based learning techniques including spaced repetition, interleaving, retrieval practice, and elaborative interrogation"
-tags: [Production, Tested, planning:learning, learning:retention]
+tags: [Production, Tested, Learning, Academic]
 connections: []
 metadata:
   source_type: "reference-guide"

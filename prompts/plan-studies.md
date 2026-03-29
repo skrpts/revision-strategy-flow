@@ -3,7 +3,7 @@ type: prompt
 id: plan-studies
 title: Plan Studies
 description: "Core prompt for creating revision schedules"
-tags: [Production, planning:learning, learning:retention]
+tags: [Production, Learning, Academic]
 connections:
   - target: study-planning
     type: derived_from

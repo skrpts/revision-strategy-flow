@@ -3,7 +3,7 @@ type: workflow
 id: revision-strategy-flow
 title: Revision Strategy Flow
 description: "End-to-end workflow for building and executing personalised revision strategies using evidence-based learning techniques"
-tags: [Production, Tested, planning:learning, learning:retention]
+tags: [Production, Tested, Audience, Learning]
 connections:
   - target: revision-planning
     type: uses

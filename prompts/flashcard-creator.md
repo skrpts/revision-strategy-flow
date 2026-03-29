@@ -3,7 +3,7 @@ type: prompt
 id: flashcard-creator
 title: Flashcard Creator
 description: "Simple study flashcard generator — creates question-and-answer cards from structured notes for active recall practice"
-tags: [Production, planning:learning, learning:retention]
+tags: [Production, Learning, Academic]
 connections:
   - target: note-taking
     type: derived_from

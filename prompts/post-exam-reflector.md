@@ -3,7 +3,7 @@ type: prompt
 id: post-exam-reflector
 title: Post-Exam Reflector
 description: "Guides structured reflection on exam performance to improve future revision strategy"
-tags: [Production, planning:learning, learning:study]
+tags: [Production, Learning, Academic]
 connections:
   - target: self-assessment
     type: derived_from

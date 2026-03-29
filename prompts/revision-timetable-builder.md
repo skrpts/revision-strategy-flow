@@ -3,7 +3,7 @@ type: prompt
 id: revision-timetable-builder
 title: Revision Timetable Builder
 description: "Builds a personalised revision timetable across subjects based on exam dates, confidence levels, and available time"
-tags: [Production, planning:learning, learning:retention]
+tags: [Production, Audience, Learning]
 connections:
   - target: revision-planning
     type: derived_from
