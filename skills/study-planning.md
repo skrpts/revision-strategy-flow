@@ -3,7 +3,7 @@ type: skill
 id: study-planning
 title: Study Planning
 description: "Creates structured revision and study schedules"
-tags: [Tested]
+tags: [Tested, planning:learning, learning:study]
 connections:
   - target: llm-service
     type: runs_on

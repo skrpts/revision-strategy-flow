@@ -3,7 +3,7 @@ type: asset
 id: topic-confidence-tracker-template
 title: Topic Confidence Tracker Template
 description: "Reusable template for tracking confidence levels across exam topics over the revision period"
-tags: [Production, Customer-Facing]
+tags: [Production, Customer-Facing, planning:learning, learning:retention]
 connections:
   - target: self-assessment
     type: uses

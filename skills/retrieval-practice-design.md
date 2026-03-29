@@ -3,7 +3,7 @@ type: skill
 id: retrieval-practice-design
 title: Retrieval Practice Design
 description: "Designs revision sessions and practice questions using retrieval practice, elaborative interrogation, interleaving, and other evidence-based learning techniques"
-tags: [Production, Tested]
+tags: [Production, Tested, planning:learning, learning:retention, learning:study]
 connections:
   - target: llm-service
     type: runs_on

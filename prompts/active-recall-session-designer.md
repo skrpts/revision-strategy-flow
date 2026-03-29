@@ -3,7 +3,7 @@ type: prompt
 id: active-recall-session-designer
 title: Active Recall Session Designer
 description: "Designs a structured active recall revision session for a specific topic using evidence-based techniques"
-tags: [Production]
+tags: [Production, planning:learning, learning:retention]
 connections:
   - target: retrieval-practice-design
     type: derived_from

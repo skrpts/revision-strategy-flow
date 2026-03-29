@@ -3,7 +3,7 @@ type: skill
 id: revision-planning
 title: Revision Planning
 description: "Designs personalised revision timetables that allocate study time based on exam dates, topic difficulty, confidence levels, and available hours"
-tags: [Production, Tested]
+tags: [Production, Tested, planning:learning, learning:retention]
 connections:
   - target: llm-service
     type: runs_on

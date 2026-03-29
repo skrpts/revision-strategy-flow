@@ -3,7 +3,7 @@ type: asset
 id: revision-timetable-template
 title: Revision Timetable Template
 description: "Reusable template for building a personalised revision timetable with spaced repetition scheduling"
-tags: [Production, Customer-Facing]
+tags: [Production, Customer-Facing, planning:learning, learning:retention]
 connections:
   - target: revision-planning
     type: uses

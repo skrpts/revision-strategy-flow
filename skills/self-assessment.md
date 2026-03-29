@@ -3,7 +3,7 @@ type: skill
 id: self-assessment
 title: Self-Assessment
 description: "Guides students through honest evaluation of their understanding across topics, identifying genuine confidence levels and blind spots"
-tags: [Production, Tested]
+tags: [Production, Tested, planning:learning, learning:retention]
 connections:
   - target: llm-service
     type: runs_on
