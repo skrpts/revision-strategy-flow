@@ -40,6 +40,8 @@ connections:
 metadata:
   estimated_duration: "30-60 minutes for initial setup, then ongoing"
   trigger: manual
+  - target: critical-thinking-framework
+    type: references
 ---
 
 ## Overview
