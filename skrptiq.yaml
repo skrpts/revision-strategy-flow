@@ -3,7 +3,7 @@ id: "788abe18-5801-486f-80fd-a7ca0776afc7"
 name: "revision-strategy-flow"
 display_name: "Revision Strategy Flow"
 description: "Building and executing revision strategies across multiple subjects using evidence-based learning techniques"
-version: "1.0.4"
+version: "1.0.5"
 engine: ">=1.0.0"
 
 # --- Attribution ---
@@ -33,11 +33,11 @@ requires:
 
 # --- Contents ---
 contents:
-  skills: 5
+  skills: 4
   prompts: 7
   workflows: 1
   services: 1
-  sources: 2
+  sources: 1
   documents: 1
   assets: 2
-  total: 19
+  total: 17

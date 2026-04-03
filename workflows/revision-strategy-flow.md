@@ -37,8 +37,6 @@ connections:
     type: uses
   - target: topic-confidence-tracker-template
     type: uses
-  - target: critical-thinking-framework
-    type: references
 metadata:
   estimated_duration: "30-60 minutes for initial setup, then ongoing"
   trigger: manual
