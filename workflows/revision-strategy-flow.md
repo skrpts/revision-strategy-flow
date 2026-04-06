@@ -13,20 +13,6 @@ connections:
     type: uses
   - target: study-planning
     type: uses
-  - target: revision-timetable-builder
-    type: uses
-  - target: topic-confidence-rater
-    type: uses
-  - target: practice-question-generator
-    type: uses
-  - target: flashcard-creator
-    type: uses
-  - target: plan-studies
-    type: uses
-  - target: active-recall-session-designer
-    type: uses
-  - target: post-exam-reflector
-    type: uses
   - target: llm-service
     type: runs_on
   - target: learning-science-reference
