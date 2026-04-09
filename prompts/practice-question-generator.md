@@ -17,6 +17,6 @@ Generates practice questions that mirror exam formats for effective revision.
 
 Generate {{input.question_count}} practice questions in the style of {{input.exam_type}}, based on the structured notes and flashcards below. The module is {{input.module_name}} and the topic is {{input.topic}}. Include a mix of question types: multiple choice, short answer, and essay questions. For each question, provide a model answer and mark scheme. Ensure questions test different levels of understanding: recall, comprehension, application, and analysis.
 
-**Structured notes:** {{steps.take-notes.output}}
+**Structured notes:** {{steps.Take Notes.output}}
 
-**Flashcards:** {{steps.flashcard-creator.output}}
+**Flashcards:** {{steps.Flashcard Creator.output}}

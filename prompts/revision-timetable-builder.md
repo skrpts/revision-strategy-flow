@@ -26,7 +26,7 @@ You are a study coach helping a university student build a revision timetable. Y
 {{input.exam_dates}}
 
 **Confidence map (from topic confidence assessment):**
-{{steps.topic-confidence-rater.output}}
+{{steps.Self-Assessment.output}}
 
 **Available study hours per week:**
 {{input.available_hours_per_week}}
