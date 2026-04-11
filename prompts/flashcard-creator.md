@@ -4,6 +4,25 @@ id: flashcard-creator
 title: Flashcard Creator
 description: "Simple study flashcard generator — creates question-and-answer cards from structured notes for active recall practice"
 tags: [Production, Learning, Academic]
+inputs:
+  card_count:
+    label: "Card Count"
+    description: "Number of flashcards to generate"
+    example: "15"
+    required: true
+    type: text
+  module_name:
+    label: "Module Name"
+    description: "The name of the course module or subject"
+    example: "Introduction to Macroeconomics"
+    required: true
+    type: text
+  topic:
+    label: "Topic"
+    description: "The main subject or topic to address"
+    example: "The impact of remote work on team productivity"
+    required: true
+    type: text
 connections:
   - target: note-taking
     type: derived_from

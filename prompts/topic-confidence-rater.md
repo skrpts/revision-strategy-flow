@@ -4,6 +4,25 @@ id: topic-confidence-rater
 title: Topic Confidence Rater
 description: "Assesses confidence level across topics and identifies weak areas for focused revision"
 tags: [Production, Learning, Academic]
+inputs:
+  modules_and_topics:
+    label: "Modules and Topics"
+    description: "The modules and their topics to cover"
+    example: "Biology: cell division, photosynthesis. Chemistry: organic reactions, bonding."
+    required: true
+    type: text
+  past_results:
+    label: "Past Results"
+    description: "Results from previous study sessions or tests"
+    example: "Last test: 72%. Weakest area: organic chemistry."
+    required: true
+    type: text
+  time_until_exams:
+    label: "Time Until Exams"
+    description: "How long until the exam period starts"
+    example: "4 weeks"
+    required: true
+    type: text
 connections:
   - target: self-assessment
     type: derived_from

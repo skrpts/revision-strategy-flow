@@ -4,6 +4,31 @@ id: revision-timetable-builder
 title: Revision Timetable Builder
 description: "Builds a personalised revision timetable across subjects based on exam dates, confidence levels, and available time"
 tags: [Production, Audience, Learning]
+inputs:
+  exam_dates:
+    label: "Exam Dates"
+    description: "Dates for upcoming exams"
+    example: "Biology: 15 June, Chemistry: 18 June, Physics: 22 June"
+    required: true
+    type: text
+  available_hours_per_week:
+    label: "Available Hours Per Week"
+    description: "How many hours per week you can dedicate to study"
+    example: "15"
+    required: true
+    type: text
+  study_preferences:
+    label: "Study Preferences"
+    description: "Your preferred study methods"
+    example: "Visual learner. Prefer diagrams over text. Best focus in mornings."
+    required: true
+    type: text
+  current_date:
+    label: "Current Date"
+    description: "Today's date"
+    example: "2026-04-11"
+    required: true
+    type: text
 connections:
   - target: revision-planning
     type: derived_from

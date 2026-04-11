@@ -4,6 +4,31 @@ id: active-recall-session-designer
 title: Active Recall Session Designer
 description: "Designs a structured active recall revision session for a specific topic using evidence-based techniques"
 tags: [Production, Learning, Academic]
+inputs:
+  topic:
+    label: "Topic"
+    description: "The main subject or topic to address"
+    example: "The impact of remote work on team productivity"
+    required: true
+    type: text
+  module_name:
+    label: "Module Name"
+    description: "The name of the course module or subject"
+    example: "Introduction to Macroeconomics"
+    required: true
+    type: text
+  session_duration:
+    label: "Session Duration"
+    description: "How long the study session should be"
+    example: "45 minutes"
+    required: true
+    type: text
+  available_materials:
+    label: "Available Materials"
+    description: "Study materials you have access to"
+    example: "Lecture notes, textbook chapters 1-5, past exam papers"
+    required: true
+    type: text
 connections:
   - target: retrieval-practice-design
     type: derived_from

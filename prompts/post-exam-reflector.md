@@ -4,6 +4,43 @@ id: post-exam-reflector
 title: Post-Exam Reflector
 description: "Guides structured reflection on exam performance to improve future revision strategy"
 tags: [Production, Learning, Academic]
+inputs:
+  exam_date:
+    label: "Exam Date"
+    description: "When the exam takes place"
+    example: "2026-06-15"
+    required: true
+    type: text
+  exam_details:
+    label: "Exam Details"
+    description: "Details about the exam format, duration, and structure"
+    example: "2-hour written exam. Section A: short answers. Section B: essay."
+    required: true
+    type: text
+  revision_approach:
+    label: "Revision Approach"
+    description: "Your approach to addressing the reviewer comments"
+    example: "Accept all methodological suggestions. Push back on scope expansion."
+    required: true
+    type: text
+  performance_assessment:
+    label: "Performance Assessment"
+    description: "Assessment of team performance"
+    example: "Sprint velocity declining. Two team members consistently over capacity."
+    required: true
+    type: text
+  difficulties_encountered:
+    label: "Difficulties Encountered"
+    description: "Problems the team has faced"
+    example: "Merge conflicts due to parallel work. Unclear requirements from stakeholder."
+    required: true
+    type: text
+  emotional_state:
+    label: "Emotional State"
+    description: "The customer's apparent emotional state"
+    example: "Frustrated"
+    required: true
+    type: text
 connections:
   - target: self-assessment
     type: derived_from

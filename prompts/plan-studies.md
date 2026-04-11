@@ -4,6 +4,25 @@ id: plan-studies
 title: Plan Studies
 description: "Core prompt for creating revision schedules"
 tags: [Production, Learning, Academic]
+inputs:
+  module_name:
+    label: "Module Name"
+    description: "The name of the course module or subject"
+    example: "Introduction to Macroeconomics"
+    required: true
+    type: text
+  exam_date:
+    label: "Exam Date"
+    description: "When the exam takes place"
+    example: "2026-06-15"
+    required: true
+    type: text
+  syllabus_topics:
+    label: "Syllabus Topics"
+    description: "The list of topics covered in the syllabus"
+    example: "Cell biology, genetics, evolution, ecology, human physiology"
+    required: true
+    type: text
 connections:
   - target: study-planning
     type: derived_from
