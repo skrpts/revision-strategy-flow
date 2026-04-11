@@ -26,6 +26,18 @@ connections:
 metadata:
   estimated_duration: "30-60 minutes for initial setup, then ongoing"
   trigger: manual
+execution:
+  - skill: "revision-planning"
+  - skill: "retrieval-practice-design"
+    input_from: "revision-planning"
+  - skill: "study-planning"
+    input_from: "retrieval-practice-design"
+  - skill: "revision-timetable-template"
+    input_from: "study-planning"
+  - skill: "topic-confidence-tracker-template"
+    input_from: "revision-timetable-template"
+  - skill: "self-assessment"
+    input_from: "topic-confidence-tracker-template"
 ---
 
 ## Overview
