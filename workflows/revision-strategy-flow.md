@@ -28,16 +28,22 @@ metadata:
   trigger: manual
 execution:
   - skill: "revision-planning"
+    step_type: "generation"
   - skill: "retrieval-practice-design"
     input_from: "revision-planning"
+    step_type: "generation"
   - skill: "study-planning"
     input_from: "retrieval-practice-design"
+    step_type: "generation"
   - skill: "revision-timetable-template"
     input_from: "study-planning"
+    step_type: "generation"
   - skill: "topic-confidence-tracker-template"
     input_from: "revision-timetable-template"
+    step_type: "synthesis"
   - skill: "self-assessment"
     input_from: "topic-confidence-tracker-template"
+    step_type: "review"
 ---
 
 ## Overview
