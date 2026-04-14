@@ -3,7 +3,7 @@ id: "788abe18-5801-486f-80fd-a7ca0776afc7"
 name: "revision-strategy-flow"
 display_name: "Revision Strategy Flow"
 description: "Building and executing revision strategies across multiple subjects using evidence-based learning techniques"
-version: "1.1.9"
+version: "1.1.10"
 engine: ">=1.0.0"
 
 # --- Attribution ---
@@ -30,16 +30,6 @@ requires:
   data_handling:
     - "course-content"
     - "exam-specifications"
-
-# --- Output ---
-output_step: "topic-confidence-tracker-template"
-composite_steps:
-  - "revision-planning"
-  - "self-assessment"
-  - "retrieval-practice-design"
-  - "study-planning"
-  - "revision-timetable-template"
-  - "topic-confidence-tracker-template"
 
 # --- Contents ---
 contents:

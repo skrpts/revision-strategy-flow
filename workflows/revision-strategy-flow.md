@@ -26,6 +26,14 @@ connections:
 metadata:
   estimated_duration: "30-60 minutes for initial setup, then ongoing"
   trigger: manual
+output_step: "topic-confidence-tracker-template"
+composite_steps:
+  - "revision-planning"
+  - "self-assessment"
+  - "retrieval-practice-design"
+  - "study-planning"
+  - "revision-timetable-template"
+  - "topic-confidence-tracker-template"
 execution:
   - skill: "revision-planning"
     step_type: "generation"
