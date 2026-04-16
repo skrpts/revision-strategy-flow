@@ -13,6 +13,8 @@ connections:
     type: uses
   - target: study-planning
     type: uses
+  - target: language-polish
+    type: uses
   - target: llm-service
     type: runs_on
   - target: learning-science-reference
@@ -26,7 +28,7 @@ connections:
 metadata:
   estimated_duration: "30-60 minutes for initial setup, then ongoing"
   trigger: manual
-output_step: "topic-confidence-tracker-template"
+output_step: "language-polish"
 composite_steps:
   - "revision-planning"
   - "self-assessment"
@@ -34,6 +36,7 @@ composite_steps:
   - "study-planning"
   - "revision-timetable-template"
   - "topic-confidence-tracker-template"
+  - "language-polish"
 execution:
   - skill: "revision-planning"
     step_type: "generation"
@@ -45,6 +48,8 @@ execution:
     step_type: "generation"
   - skill: "topic-confidence-tracker-template"
     step_type: "synthesis"
+  - skill: "language-polish"
+    step_type: "content"
   - skill: "self-assessment"
     step_type: "review"
 ---
