@@ -52,6 +52,7 @@ execution:
     step_type: "content"
   - skill: "self-assessment"
     step_type: "review"
+    prompt: "topic-confidence-rater"
 ---
 
 ## Overview
