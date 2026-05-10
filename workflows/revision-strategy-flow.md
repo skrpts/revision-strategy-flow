@@ -55,6 +55,9 @@ execution:
   - skill: "language-polish"
     prompt: "polish-language"
     step_type: "content"
+    context:
+      voice_profile: ""
+      grammar_strictness: ""
   - skill: "self-assessment"
     step_type: "review"
     prompt: "topic-confidence-rater"
