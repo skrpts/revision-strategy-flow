@@ -57,7 +57,7 @@ You are a study coach helping a university student build a revision timetable. Y
 {{input.available_hours_per_week}}
 
 **Study preferences:**
-{{input.study_preferences | default: "No specific preferences stated."}}
+{{input.study_preferences}}
 
 **Today's date:**
 {{input.current_date}}

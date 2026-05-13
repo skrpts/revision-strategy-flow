@@ -45,7 +45,7 @@ You are a study coach helping a university student assess their exam readiness. 
 {{input.modules_and_topics}}
 
 **Past exam results or mock scores (if available):**
-{{input.past_results | default: "No past results provided."}}
+{{input.past_results}}
 
 **Time until exams:**
 {{input.time_until_exams}}

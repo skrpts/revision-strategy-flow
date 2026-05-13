@@ -74,7 +74,7 @@ You are a study coach helping a university student reflect on a recent exam. You
 {{input.difficulties_encountered}}
 
 **Emotional state (optional):**
-{{input.emotional_state | default: "Not specified"}}
+{{input.emotional_state}}
 
 ### Instructions
 
