@@ -50,6 +50,10 @@ You are a study coach helping a university student assess their exam readiness. 
 **Time until exams:**
 {{input.time_until_exams}}
 
+### Prior Analysis
+
+{{steps.previous.output}}
+
 ### Instructions
 
 For each topic the student has listed, conduct the following assessment:
