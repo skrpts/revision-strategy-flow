@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.1.27
+GH#745 — declare per-step `output: {name, type}` on every execution step (revision_plan/text, practice_sessions/text, study_plan/text, timetable/text, confidence_tracker/text, polished_plan/text, confidence_ratings/text). Lights up the #744 rich flow-map with named, typed outputs. Content-only; no bindings or logic changes.
+
 ## v1.1.26
 GH#645 Row 3b — migrate to K-037 dep-referenced schema. Strip 10 inline shared-content files and declare 10 hub-shared deps (UUID id + slug name + version + checksum from `gen-dep-checksums.mjs`). Closes pre-Step-3 inline-vendoring for this bundle.
 

@@ -41,26 +41,33 @@ execution:
   - skill: "revision-planning"
     prompt: "revision-timetable-builder"
     step_type: "generation"
+    output: { name: "revision_plan", type: "text" }
   - skill: "retrieval-practice-design"
     prompt: "active-recall-session-designer"
     step_type: "generation"
+    output: { name: "practice_sessions", type: "text" }
   - skill: "study-planning"
     prompt: "plan-studies"
     step_type: "generation"
+    output: { name: "study_plan", type: "text" }
   - skill: "revision-timetable-template"
     prompt: "revision-timetable-builder"
     step_type: "generation"
+    output: { name: "timetable", type: "text" }
   - skill: "topic-confidence-tracker-template"
     step_type: "local.template"
+    output: { name: "confidence_tracker", type: "text" }
   - skill: "language-polish"
     prompt: "polish-language"
     step_type: "content"
+    output: { name: "polished_plan", type: "text" }
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"
   - skill: "self-assessment"
     step_type: "review"
     prompt: "topic-confidence-rater"
+    output: { name: "confidence_ratings", type: "text" }
 ---
 
 ## Overview
