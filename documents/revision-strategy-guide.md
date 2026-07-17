@@ -70,7 +70,7 @@ Be honest. Overestimating your confidence leads to under-revision of topics you 
 ### Step 3: Build Your Timetable
 
 With your topic list and confidence ratings, build a timetable that:
-- **Prioritises weak topics** — allocate roughly 50% of your revision time to topics rated 1-2
+- **Prioritizes weak topics** — allocate roughly 50% of your revision time to topics rated 1-2
 - **Maintains strong topics** — even topics rated 4-5 need at least one or two revision sessions to prevent decay
 - **Uses spaced repetition** — each topic appears multiple times, with increasing gaps between sessions
 - **Interleaves subjects** — each day includes 2-3 different subjects or topic areas
@@ -93,7 +93,7 @@ At the end of each week:
 - Reassess your confidence ratings — have they changed?
 - Check your timetable — are you on track? Do any topics need more time than planned?
 - Review your practice question results — are you improving?
-- Adjust the timetable for the coming week based on what you have learnt
+- Adjust the timetable for the coming week based on what you have learned
 
 After each exam:
 - Conduct a structured post-exam reflection
@@ -112,7 +112,7 @@ Trying to know everything about every topic equally. In reality, you have limite
 Revising alone in silence for weeks. Discussing material with peers, explaining concepts to each other, and testing each other are all forms of retrieval practice and elaborative processing. Study groups work — as long as you are actually studying, not socialising.
 
 ### The Tools Trap
-Spending more time organising your revision setup — colour-coding, buying stationery, setting up apps — than actually revising. A simple approach you use consistently beats an elaborate one you spend all your time maintaining.
+Spending more time organizing your revision setup — colour-coding, buying stationery, setting up apps — than actually revising. A simple approach you use consistently beats an elaborate one you spend all your time maintaining.
 
 ## How This Flow Helps
 

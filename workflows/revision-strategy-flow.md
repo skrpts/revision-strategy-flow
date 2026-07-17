@@ -2,7 +2,7 @@
 type: workflow
 id: revision-strategy-flow
 title: Revision Strategy Flow
-description: "End-to-end workflow for building and executing personalised revision strategies using evidence-based learning techniques"
+description: "End-to-end workflow for building and executing personalized revision strategies using evidence-based learning techniques"
 tags: [Production, Tested, Audience, Learning]
 connections:
   - target: revision-planning
@@ -50,11 +50,11 @@ execution:
     prompt: "plan-studies"
     step_type: "generation"
     output: { name: "study_plan", type: "text" }
-  - skill: "revision-timetable-template"
+  - id: "revision-timetable-template"
     prompt: "revision-timetable-builder"
     step_type: "generation"
     output: { name: "timetable", type: "text" }
-  - skill: "topic-confidence-tracker-template"
+  - id: "topic-confidence-tracker-template"
     step_type: "local.template"
     output: { name: "confidence_tracker", type: "text" }
   - skill: "language-polish"
@@ -72,7 +72,7 @@ execution:
 
 ## Overview
 
-The Revision Strategy Flow guides students from initial revision planning through to post-exam reflection. It begins by assessing what needs revising and how confident the student feels across their topics, then builds a personalised timetable, designs focused revision sessions using evidence-based techniques, generates practice questions, and finally reflects on exam performance to improve future strategy. The flow is designed to run iteratively — the confidence assessment and timetable are updated regularly as revision progresses.
+The Revision Strategy Flow guides students from initial revision planning through to post-exam reflection. It begins by assessing what needs revising and how confident the student feels across their topics, then builds a personalized timetable, designs focused revision sessions using evidence-based techniques, generates practice questions, and finally reflects on exam performance to improve future strategy. The flow is designed to run iteratively — the confidence assessment and timetable are updated regularly as revision progresses.
 
 ## Pipeline Stages
 
@@ -83,18 +83,18 @@ The Revision Strategy Flow guides students from initial revision planning throug
 Invoke the **topic-confidence-rater** prompt using the **self-assessment** skill. The student provides their list of modules, topics within each module, and their honest assessment of how well they understand each one. The output is a structured confidence map that identifies strong areas, weak areas, and blind spots.
 
 **Input:** Module and topic list via `{{modules_and_topics}}`, plus any past exam results via `{{past_results}}`
-**Output:** Confidence map with topics rated and prioritised, using the topic-confidence-tracker-template
+**Output:** Confidence map with topics rated and prioritized, using the topic-confidence-tracker-template
 **Error handling:** If the student cannot list their topics, suggest they consult their module handbook or course specification first. If confidence ratings are all "high," challenge the student to test themselves before accepting those ratings.
 
 ### Stage 2: Timetable Construction
 
 **Trigger:** After Stage 1 completes, or when exam dates change.
 
-Invoke the **revision-timetable-builder** prompt using the **revision-planning** skill. Takes the confidence map from Stage 1, the student's exam dates, and their available study time, then produces a personalised revision timetable that prioritises weak areas while maintaining coverage of strong ones.
+Invoke the **revision-timetable-builder** prompt using the **revision-planning** skill. Takes the confidence map from Stage 1, the student's exam dates, and their available study time, then produces a personalized revision timetable that prioritizes weak areas while maintaining coverage of strong ones.
 
 **Input:** Confidence map via `{{confidence_map}}`, exam dates via `{{exam_dates}}`, available hours via `{{available_hours_per_week}}`, study preferences via `{{study_preferences}}`
 **Output:** Revision timetable using the revision-timetable-template
-**Error handling:** If exam dates are less than one week away, switch to a compressed revision plan that focuses exclusively on high-impact topics. If available time is unrealistically low, flag this honestly and help the student prioritise ruthlessly.
+**Error handling:** If exam dates are less than one week away, switch to a compressed revision plan that focuses exclusively on high-impact topics. If available time is unrealistically low, flag this honestly and help the student prioritize ruthlessly.
 
 ### Stage 3: Active Revision Sessions
 
@@ -110,7 +110,7 @@ Invoke the **active-recall-session-designer** prompt using the **retrieval-pract
 
 **Trigger:** After completing 2-3 revision sessions on a topic, or on demand.
 
-Invoke the **practice-question-generator** prompt using the **retrieval-practice-design** skill. Generates practice exam questions at the appropriate difficulty level for the topic, including both short-answer and essay-style questions where relevant. Questions are modelled on real exam formats where the student has provided past paper examples.
+Invoke the **practice-question-generator** prompt using the **retrieval-practice-design** skill. Generates practice exam questions at the appropriate difficulty level for the topic, including both short-answer and essay-style questions where relevant. Questions are modeled on real exam formats where the student has provided past paper examples.
 
 **Input:** Topic via `{{topic}}`, exam format via `{{exam_format}}`, difficulty level via `{{difficulty}}`, number of questions via `{{question_count}}`, past paper examples via `{{past_paper_examples}}`
 **Output:** Set of practice questions with model answers and marking guidance
@@ -174,7 +174,7 @@ The flow is considered complete for an exam period when:
 
 | Name | Description |
 |------|-------------|
-| Confidence map | Confidence map with topics rated and prioritised, using the topic-confidence-tracker-template |
+| Confidence map | Confidence map with topics rated and prioritized, using the topic-confidence-tracker-template |
 | Revision timetable using the revision-timetable-template | Revision timetable using the revision-timetable-template |
 | Structured revision session plan | Structured revision session plan with activities, timings, and self-check criteria |
 | Set of practice questions | Set of practice questions with model answers and marking guidance |
@@ -185,7 +185,7 @@ The flow is considered complete for an exam period when:
 Before running this workflow:
 
 1. No external services required — paste your content directly and provide any supporting context as inputs or source nodes.
-2. Review the included documents, assets, or source nodes and customise them to match your team, brand, or domain conventions where needed.
+2. Review the included documents, assets, or source nodes and customize them to match your team, brand, or domain conventions where needed.
 3. No specific AI provider or API key is required beyond your configured skrptiq LLM provider.
 
 ## Provider Notes

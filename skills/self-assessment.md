@@ -29,14 +29,14 @@ Before asking students to rate their confidence, challenge them with quick diagn
 3. **Identify the gaps:** Can the student identify what they do NOT know about the topic? Students who say "I know everything" about a topic almost certainly have blind spots.
 
 ### Confidence Rating Scale
-Rate each topic on a 5-point scale with behavioural anchors:
+Rate each topic on a 5-point scale with behavioral anchors:
 
-| Level | Label | Behavioural Anchor |
+| Level | Label | Behavioral Anchor |
 |-------|-------|-------------------|
 | 5 | Confident | Could write a clear, detailed essay answer under exam conditions right now |
 | 4 | Good | Understand the key concepts and can explain them, but might miss nuances or edge cases |
 | 3 | Developing | Know the basics but could not answer an exam question fully without further revision |
-| 2 | Weak | Recognise the topic but could not explain the key concepts coherently |
+| 2 | Weak | Recognize the topic but could not explain the key concepts coherently |
 | 1 | Minimal | Have barely engaged with this topic — would struggle to say anything meaningful about it |
 
 ### Assessment Dimensions
@@ -58,7 +58,7 @@ After the student completes their self-assessment:
 - Ratings must be justified with specific evidence, not just feelings
 - The assessment must cover every topic that will be examined
 - Blind spots must be explicitly identified and flagged
-- The output must prioritise topics clearly: which need urgent attention, which need maintenance, which are secure
+- The output must prioritize topics clearly: which need urgent attention, which need maintenance, which are secure
 - Reassessment after revision sessions should show movement — if ratings never change, the student may not be engaging honestly
 
 ## Constraints
@@ -66,4 +66,4 @@ After the student completes their self-assessment:
 - Do not inflate ratings to make the student feel better — honest assessment is the foundation of effective revision
 - Do not assess topics the student has not listed — work with what they provide, but flag if coverage seems incomplete
 - If past exam results are provided, use them as a reality check but do not assume past performance perfectly predicts future performance
-- The goal is actionable prioritisation, not a thorough diagnostic — keep the output focused
+- The goal is actionable prioritization, not a thorough diagnostic — keep the output focused

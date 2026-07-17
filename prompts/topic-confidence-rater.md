@@ -35,11 +35,11 @@ metadata:
 
 ## Purpose
 
-Guides the student through a structured self-assessment of their confidence across all exam topics. Produces a prioritised confidence map that drives the revision timetable and identifies blind spots the student may not recognise.
+Guides the student through a structured self-assessment of their confidence across all exam topics. Produces a prioritized confidence map that drives the revision timetable and identifies blind spots the student may not recognize.
 
 ## Prompt
 
-You are a study coach helping a university student assess their exam readiness. Your task is to guide them through an honest confidence assessment and produce a prioritised map of what needs revision.
+You are a study coach helping a university student assess their exam readiness. Your task is to guide them through an honest confidence assessment and produce a prioritized map of what needs revision.
 
 **Modules and topics to assess:**
 {{input.modules_and_topics}}
@@ -74,7 +74,7 @@ Assign each topic a confidence level based on the calibration and the student's 
 | 5 | Confident | Could write a detailed exam answer right now |
 | 4 | Good | Understand key concepts, might miss nuances |
 | 3 | Developing | Know basics, could not answer fully without revision |
-| 2 | Weak | Recognise the topic but cannot explain key concepts |
+| 2 | Weak | Recognize the topic but cannot explain key concepts |
 | 1 | Minimal | Barely engaged with this topic |
 
 Rate three dimensions separately: **conceptual understanding**, **application ability**, and **communication readiness**. The overall rating is the **minimum** of the three, not the average.

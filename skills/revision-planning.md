@@ -2,7 +2,7 @@
 type: skill
 id: revision-planning
 title: Revision Planning
-description: "Designs personalised revision timetables that allocate study time based on exam dates, topic difficulty, confidence levels, and available hours"
+description: "Designs personalized revision timetables that allocate study time based on exam dates, topic difficulty, confidence levels, and available hours"
 tags: [Production, Tested, Audience, Learning]
 connections:
   - target: llm-service
@@ -18,7 +18,7 @@ metadata:
 
 ## Capability
 
-Revision Planning takes a student's exam schedule, confidence map, and available time, then produces a structured revision timetable that maximises learning outcomes within the constraints. It applies evidence-based scheduling principles: spaced repetition intervals, interleaving of subjects, prioritisation of weak areas, and built-in review sessions.
+Revision Planning takes a student's exam schedule, confidence map, and available time, then produces a structured revision timetable that maximizes learning outcomes within the constraints. It applies evidence-based scheduling principles: spaced repetition intervals, interleaving of subjects, prioritization of weak areas, and built-in review sessions.
 
 This skill understands that revision is not about spending equal time on every topic. It weights allocation towards topics where the student is least confident, while ensuring strong topics receive maintenance sessions to prevent decay. It also accounts for the psychological reality of revision — scheduling easier topics at low-energy times and harder topics at peak focus periods.
 
@@ -26,7 +26,7 @@ This skill understands that revision is not about spending equal time on every t
 
 ### Input Analysis
 1. Parse the student's exam dates and calculate the available revision days for each subject
-2. Analyse the confidence map to identify topics requiring heavy, moderate, or light revision
+2. Analyze the confidence map to identify topics requiring heavy, moderate, or light revision
 3. Account for the student's stated available hours per day and any commitments or rest days
 4. Identify dependencies between topics (where understanding Topic A is prerequisite for Topic B)
 
@@ -56,6 +56,6 @@ This skill understands that revision is not about spending equal time on every t
 ## Constraints
 
 - Do not assume the student has unlimited time or motivation
-- If the available time is genuinely insufficient to cover all topics adequately, say so explicitly and help the student make strategic choices about what to prioritise
+- If the available time is genuinely insufficient to cover all topics adequately, say so explicitly and help the student make strategic choices about what to prioritize
 - Do not frontload all difficult topics at the start — this leads to burnout and abandonment
 - Account for exam dates: the final revision session for each subject should be 1-2 days before its exam, not the night before

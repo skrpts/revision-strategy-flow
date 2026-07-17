@@ -100,9 +100,9 @@ Evaluate the effectiveness of their revision approach:
 
 **3. Knowledge Gap Analysis**
 
-Categorise the difficulties encountered:
-- **Never learnt:** Topics that were not covered in revision at all
-- **Learnt but forgotten:** Topics that were revised but could not be recalled under exam conditions
+Categorize the difficulties encountered:
+- **Never learned:** Topics that were not covered in revision at all
+- **Learned but forgotten:** Topics that were revised but could not be recalled under exam conditions
 - **Recalled but poorly expressed:** Knowledge was there but the answer was disorganised or incomplete
 - **Applied incorrectly:** Concepts were understood in isolation but applied wrongly to the exam question
 

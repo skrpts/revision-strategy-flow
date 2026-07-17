@@ -65,7 +65,7 @@ Combining retrieval practice with spaced repetition. Topics are tested, then res
 ### Question Types by Difficulty
 - **Beginner:** Define, list, identify — test recall of foundational knowledge
 - **Intermediate:** Explain, compare, distinguish — test comprehension and analysis
-- **Advanced:** Apply, evaluate, synthesise — test transfer and critical thinking
+- **Advanced:** Apply, evaluate, synthesize — test transfer and critical thinking
 
 ### Question Calibration
 Questions should be slightly harder than the student's current level — the "desirable difficulty" principle. If the student answers correctly with ease, the question is too easy. If they cannot even begin to answer, it is too hard. The sweet spot is where retrieval requires effort but is achievable.

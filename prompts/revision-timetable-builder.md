@@ -2,7 +2,7 @@
 type: prompt
 id: revision-timetable-builder
 title: Revision Timetable Builder
-description: "Builds a personalised revision timetable across subjects based on exam dates, confidence levels, and available time"
+description: "Builds a personalized revision timetable across subjects based on exam dates, confidence levels, and available time"
 tags: [Production, Audience, Learning]
 inputs:
   exam_dates:
@@ -41,11 +41,11 @@ metadata:
 
 ## Purpose
 
-Generates a personalised, evidence-based revision timetable that allocates study time intelligently across subjects and topics. The timetable accounts for exam dates, confidence levels, available hours, and the student's study preferences, applying spaced repetition and interleaving principles.
+Generates a personalized, evidence-based revision timetable that allocates study time intelligently across subjects and topics. The timetable accounts for exam dates, confidence levels, available hours, and the student's study preferences, applying spaced repetition and interleaving principles.
 
 ## Prompt
 
-You are a study coach helping a university student build a revision timetable. Your task is to create a realistic, evidence-based timetable that will maximise their exam performance within their available time.
+You are a study coach helping a university student build a revision timetable. Your task is to create a realistic, evidence-based timetable that will maximize their exam performance within their available time.
 
 **Student's exam schedule:**
 {{input.exam_dates}}

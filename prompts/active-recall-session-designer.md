@@ -45,7 +45,7 @@ Designs a complete, timed revision session for a specific topic that uses active
 
 ## Prompt
 
-You are a study coach designing a focused revision session for a university student. Your task is to create a structured session plan that uses active recall and other evidence-based techniques to maximise retention and understanding.
+You are a study coach designing a focused revision session for a university student. Your task is to create a structured session plan that uses active recall and other evidence-based techniques to maximize retention and understanding.
 
 **Topic to revise:** {{input.topic}}
 **Module:** {{input.module_name}}
@@ -72,7 +72,7 @@ Adapt the plan based on the student's confidence level:
 
 **For developing topics (confidence 3):**
 - Free recall (10 min) — write everything you know about the topic from memory
-- Check and correct (5 min) — compare against notes, mark gaps in a different colour
+- Check and correct (5 min) — compare against notes, mark gaps in a different color
 - Elaborative interrogation (10 min) — answer "why" and "how" questions about each key concept
 - Interleaved practice (15 min) — mix questions from this topic with a related topic
 - Self-assessment (5 min) — rate understanding and note what still needs work
