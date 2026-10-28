@@ -4,6 +4,15 @@ id: post-exam-reflector
 title: Post-Exam Reflector
 description: "Guides structured reflection on exam performance to improve future revision strategy"
 tags: [Production, Learning, Academic]
+context_params:
+  revision_plan:
+    label: "Revision timetable"
+    description: "The revision timetable the student worked to. Supplied by the invoking workflow from the planning stage."
+    required: true
+  practice_questions:
+    label: "Practice question results"
+    description: "The practice questions and how the student fared on them. Supplied by the invoking workflow from the practice question stage."
+    required: true
 inputs:
   exam_date:
     label: "Exam Date"
@@ -61,8 +70,8 @@ You are a study coach helping a university student reflect on a recent exam. You
 - Exam date: {{input.exam_date}}
 {{input.exam_details}}
 
-**Revision timetable:** {{steps.Revision Planning.output}}
-**Practice question results:** {{steps.Practice Question Generator.output}}
+**Revision timetable:** {{step.context.revision_plan}}
+**Practice question results:** {{step.context.practice_questions}}
 
 **Revision approach used:**
 {{input.revision_approach}}

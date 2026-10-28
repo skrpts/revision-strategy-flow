@@ -9,6 +9,10 @@ connections:
     type: uses
   - target: self-assessment
     type: uses
+  - target: practice-question-design
+    type: uses
+  - target: post-exam-reflection
+    type: uses
   - target: retrieval-practice-design
     type: uses
   - target: study-planning
@@ -50,6 +54,10 @@ execution:
     prompt: "plan-studies"
     step_type: "generation"
     output: { name: "study_plan", type: "text" }
+    bindings:
+      source:
+        from_step: "Retrieval Practice Design"
+        field: output
   - id: "revision-timetable-template"
     prompt: "revision-timetable-builder"
     step_type: "generation"
@@ -64,10 +72,33 @@ execution:
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"
+    bindings:
+      source:
+        from_step: "topic-confidence-tracker-template"
+        field: output
   - skill: "self-assessment"
     step_type: "review"
     prompt: "topic-confidence-rater"
     output: { name: "confidence_ratings", type: "text" }
+  - skill: "practice-question-design"
+    prompt: "practice-question-generator"
+    step_type: "generation"
+    output: { name: "practice_questions", type: "text" }
+    bindings:
+      source:
+        from_step: "Retrieval Practice Design"
+        field: output
+  - skill: "post-exam-reflection"
+    prompt: "post-exam-reflector"
+    step_type: "review"
+    output: { name: "reflection", type: "text" }
+    bindings:
+      revision_plan:
+        from_step: "Revision Planning"
+        field: output
+      practice_questions:
+        from_step: "Practice Question Generator"
+        field: output
 ---
 
 ## Overview
@@ -157,7 +188,7 @@ The flow is considered complete for an exam period when:
 | `{{input.past_results}}` | No | Past exam results or mock scores | `Psychology mock: 58%, Statistics mock: 72%` |
 | `{{input.study_preferences}}` | No | Study preferences (e.g. morning/evening, group/solo) | `Morning study preferred, 45-minute sessions` |
 | `{{input.current_date}}` | No | Today's date | `2026-03-20` |
-| `{{input.topic}}` | No | Specific topic for revision session or practice questions | `Memory` |
+| `{{input.syllabus_topics}}` | Yes | The list of topics covered in the syllabus | `Cell biology, genetics, evolution, ecology, human physiology` |
 | `{{input.exam_format}}` | No | Exam format for practice questions | `Written essay with short-answer section` |
 | `{{input.question_count}}` | No | Number of practice questions to generate | `5` |
 | `{{input.session_duration}}` | No | Duration for active recall sessions | `45 minutes` |
@@ -169,6 +200,7 @@ The flow is considered complete for an exam period when:
 | `{{input.performance_assessment}}` | No | Self-assessed exam performance | `Felt confident on 3 of 4 questions, struggled with the methodology question` |
 | `{{input.difficulties_encountered}}` | No | Specific difficulties during the exam | `Ran out of time on the last question, could not recall key theorists for Q2` |
 | `{{input.emotional_state}}` | No | Emotional state after the exam | `Relieved but worried about Q2` |
+| `{{input.topic}}` | Yes | The main subject or topic to address | `The impact of remote work on team productivity` |
 
 ## Outputs
 

@@ -3,7 +3,7 @@ id: "788abe18-5801-486f-80fd-a7ca0776afc7"
 name: "revision-strategy-flow"
 display_name: "Revision Strategy Flow"
 description: "Building and executing revision strategies across multiple subjects using evidence-based learning techniques"
-version: "1.1.28"
+version: "1.1.31"
 engine: ">=0.1.0"
 
 # --- Attribution ---
@@ -26,16 +26,16 @@ tags:
 dependencies:
   - id: "c58d4622-84f5-4339-95ef-7ebcca911948"
     name: "flashcard-creator"
-    version: 1.0.3
-    checksum: "sha256:e3951826c719714d57414fc6510f75cf225bdc31c43019afc95f57c070cc2bc3"
+    version: 1.0.4
+    checksum: "sha256:00a20387ebd0e1afa8cc0b3f2eff49711129949c73e8f720e00b9d17379fc1bb"
   - id: "3db66b8b-8758-4503-a555-5330f3f9b3d9"
     name: "language-polish"
     version: 1.0.3
     checksum: "sha256:efe38bb2b4ba213139299818cc4c7d694270fcfd7ec4d3c738e2170f6394bbd6"
   - id: "de62c009-d140-4fac-b6b8-ee67a00235d5"
     name: "learning-science-reference"
-    version: 1.0.1
-    checksum: "sha256:c5f150651a0c49111c12846bec21d82655bdd7e2cde46b482ad497d906029b98"
+    version: 1.0.2
+    checksum: "sha256:f744f50199f3ffcf8648d82574e72c8411158cfbb96e13a6b3a4100a938f6250"
   - id: "fcab9536-a13e-49c9-b0c3-bb3097682e69"
     name: "llm-service"
     version: 1.0.3
@@ -46,20 +46,20 @@ dependencies:
     checksum: "sha256:aae1129260dce7ba5eae7debe69e697ae0e5d962f65654123eaf617df01e1f3d"
   - id: "d5c391ad-4bda-44a8-beb1-db32939ad0e2"
     name: "plan-studies"
-    version: 1.0.3
-    checksum: "sha256:2d0a9fffe94b1451b58e2057e1146a258f0924c5d7f76a746485c2c1544f307b"
+    version: 1.0.4
+    checksum: "sha256:d9cd318fcfd86ed25341081fa637f8baa9702bfe7f5f417fbe8d97aaa49a693d"
   - id: "9b1771e0-39b0-4fbc-8d45-738f51b6083a"
     name: "polish-language"
-    version: 1.0.1
-    checksum: "sha256:2a666b1a1566e45a3d69cf3fac51399a471169184409ef54d588f69b7da7097e"
+    version: 1.0.7
+    checksum: "sha256:637891c464e09eb353932f9a37a59dd8bfe77be7117fb6918e032fba802040d0"
   - id: "ebbd7614-da67-4cf5-8166-c7dc4400dbc6"
     name: "practice-question-generator"
-    version: 1.0.1
-    checksum: "sha256:a0bebc3fa140841b88f33c6272f87017cfa0e0e09f68a918d3ae87e7ea43cb11"
+    version: 1.0.3
+    checksum: "sha256:dcdea5360abc76f100426e59c96a79cb03cebba0662f5e8b826424cff1f023fb"
   - id: "71b597d2-dd10-432b-9e61-c237cf32e758"
     name: "revision-timetable-template"
-    version: 1.0.1
-    checksum: "sha256:fc437979254e8ae01803614bc53d342e4de841256f1804c578ae33379e1f6488"
+    version: 1.0.2
+    checksum: "sha256:8545ff084770928a3a5c060bf4479562535bde23b595d813b33b4dd8f48fb5d4"
   - id: "4b35c26d-6ad3-4929-b79b-f6b3f3f9b412"
     name: "study-planning"
     version: 1.0.3
@@ -75,18 +75,18 @@ requires:
 
 # --- Contents ---
 contents:
-  skills: 3
+  skills: 5
   prompts: 4
   workflows: 1
   services: 0
   sources: 0
   documents: 1
   assets: 1
-  total: 10
+  total: 12
 
 security:
   status: "pass"
-  scanned_at: "2026-07-17T20:21:07.739Z"
+  scanned_at: "2026-10-28T21:10:52.750Z"
   scanner_version: "3.3.0"
   syntactic: "pass"
   structural: "pass"
