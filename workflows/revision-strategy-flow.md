@@ -26,7 +26,7 @@ connections:
   - target: revision-strategy-guide
     type: references
   - target: revision-timetable-template
-    type: uses
+    type: references
   - target: topic-confidence-tracker-template
     type: uses
 metadata:
@@ -38,7 +38,6 @@ composite_steps:
   - "self-assessment"
   - "retrieval-practice-design"
   - "study-planning"
-  - "revision-timetable-template"
   - "topic-confidence-tracker-template"
   - "language-polish"
 execution:
@@ -58,10 +57,6 @@ execution:
       source:
         from_step: "Retrieval Practice Design"
         field: output
-  - id: "revision-timetable-template"
-    prompt: "revision-timetable-builder"
-    step_type: "generation"
-    output: { name: "timetable", type: "text" }
   - id: "topic-confidence-tracker-template"
     step_type: "local.template"
     output: { name: "confidence_tracker", type: "text" }

@@ -1,5 +1,18 @@
 # Release Notes
 
+## v1.1.32
+GH#1214 — remove a duplicate stage declaration that ran nothing.
+
+This workflow declared the revision-timetable stage twice: once correctly, keyed to the
+**revision-planning** skill, and once more keyed to `id: "revision-timetable-template"`. A template
+is an asset and cannot back an executable step, so the second declaration matched no planner branch
+and was dropped silently.
+
+**Nothing changes about what this workflow does.** The stage has always run, via the skill-keyed
+entry; the duplicate was decorative. It is removed, along with its `composite_steps` entry, and the
+timetable template is now declared as reference material rather than as something the workflow uses
+as a step.
+
 ## v1.1.31
 GH#1045/GH#1100 (phantom repair, ruling (B) consumer half) — wire the two stages this workflow documents and never ran. `post-exam-reflector` shipped declared and uninvoked, and it read `{{steps.Practice Question Generator.output}}` — a step no execution entry ran, so the reference could never resolve. The package was not wrong about what it wanted: it already PINNED `practice-question-generator` and simply never invoked it.
 
